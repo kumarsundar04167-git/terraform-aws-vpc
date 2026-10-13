@@ -17,57 +17,57 @@ variable "vpc_tags" {
 }
 
 variable "igw_tags" {
-    type = string
+    type = map
     default = {}
 }
 
 variable "public_cidr" {
-    type = string
+    type = list
     default = ["10.0.1.0/24","10.0.2.0/24"]
 }
 
 variable "public_subnet_tags" {
-    type = string
+    type = map
     default = {}
 }
 
 variable "private_cidr" {
-    type = string
+    type = list
     default = ["10.0.11.0/24","10.0.12.0/24"]
 }
 
 variable "private_subnet_tags" {
-    type = string
+    type = map
     default = {}
 }
 
 variable "database_cidr" {
-    type = string
+    type = list
     default = ["10.0.21.0/24","10.0.22.0/24"]
 }
 
 variable "database_subnet_tags" {
-    type = string
+    type = map
     default = {}
 }
 
 variable "aws_route_table_tags" {
-    type = string
+    type = map
     default = {}
 }
 
 variable "nat-eip" {
-    type = string
+    type = map
     default ={}
 }
 
 variable "nat" {
-    type = string
+    type = map
     default = {}
 }
 
 variable "peering_tags" {
-    type = string
+    type = map
     default = {}
 }
 
