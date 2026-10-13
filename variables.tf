@@ -23,7 +23,7 @@ variable "igw_tags" {
 
 variable "public_cidr" {
     type = string
-    default = ["10.0.1.0/16","10.0.2.0/16"]
+    default = ["10.0.1.0/24","10.0.2.0/24"]
 }
 
 variable "public_subnet_tags" {
@@ -33,7 +33,7 @@ variable "public_subnet_tags" {
 
 variable "private_cidr" {
     type = string
-    default = ["10.0.11.0/16","10.0.12.0/16"]
+    default = ["10.0.11.0/24","10.0.12.0/24"]
 }
 
 variable "private_subnet_tags" {
@@ -43,7 +43,7 @@ variable "private_subnet_tags" {
 
 variable "database_cidr" {
     type = string
-    default = ["10.0.21.0/16","10.0.22.0/16"]
+    default = ["10.0.21.0/24","10.0.22.0/24"]
 }
 
 variable "database_subnet_tags" {
