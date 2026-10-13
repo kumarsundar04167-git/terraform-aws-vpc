@@ -56,7 +56,7 @@ variable "aws_route_table_tags" {
     default = {}
 }
 
-variable "nat-eip" {
+variable "nat_tags" {
     type = map
     default ={}
 }
